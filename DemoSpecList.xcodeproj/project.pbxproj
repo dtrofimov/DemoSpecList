@@ -10,6 +10,15 @@
 		324807C220AC1D51009359E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324807C120AC1D51009359E9 /* AppDelegate.swift */; };
 		324807C920AC1D52009359E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324807C820AC1D52009359E9 /* Assets.xcassets */; };
 		324807CC20AC1D52009359E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 324807CA20AC1D52009359E9 /* LaunchScreen.storyboard */; };
+		3289329020AC264900988CEC /* DocDocApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3289328F20AC264900988CEC /* DocDocApiClient.swift */; };
+		3289329420AC2D4400988CEC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3289329320AC2D4400988CEC /* Constants.swift */; };
+		32BCA69320AC521900B64A49 /* GetSpecsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BCA69220AC521900B64A49 /* GetSpecsRequest.swift */; };
+		32BCA69520AC52CC00B64A49 /* ServiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BCA69420AC52CC00B64A49 /* ServiceResponse.swift */; };
+		32BCA69720AC615F00B64A49 /* ServiceError+AFWrapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BCA69620AC615F00B64A49 /* ServiceError+AFWrapping.swift */; };
+		32BCA69920AC6D9C00B64A49 /* Spec+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BCA69820AC6D9C00B64A49 /* Spec+Mapping.swift */; };
+		32C9FE1D20AC220900EA426B /* SpecListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C9FE1B20AC220900EA426B /* SpecListViewController.swift */; };
+		32C9FE1E20AC220900EA426B /* SpecListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32C9FE1C20AC220900EA426B /* SpecListViewController.xib */; };
+		32C9FE2220AC227C00EA426B /* Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C9FE2120AC227C00EA426B /* Spec.swift */; };
 		D140777C88792EB9EDA735FF /* Pods_DemoSpecList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707E17B0C4C02819E1AA2660 /* Pods_DemoSpecList.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,6 +29,15 @@
 		324807C820AC1D52009359E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		324807CB20AC1D52009359E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		324807CD20AC1D52009359E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3289328F20AC264900988CEC /* DocDocApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocDocApiClient.swift; sourceTree = "<group>"; };
+		3289329320AC2D4400988CEC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		32BCA69220AC521900B64A49 /* GetSpecsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSpecsRequest.swift; sourceTree = "<group>"; };
+		32BCA69420AC52CC00B64A49 /* ServiceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceResponse.swift; sourceTree = "<group>"; };
+		32BCA69620AC615F00B64A49 /* ServiceError+AFWrapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ServiceError+AFWrapping.swift"; sourceTree = "<group>"; };
+		32BCA69820AC6D9C00B64A49 /* Spec+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Spec+Mapping.swift"; sourceTree = "<group>"; };
+		32C9FE1B20AC220900EA426B /* SpecListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecListViewController.swift; sourceTree = "<group>"; };
+		32C9FE1C20AC220900EA426B /* SpecListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpecListViewController.xib; sourceTree = "<group>"; };
+		32C9FE2120AC227C00EA426B /* Spec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spec.swift; sourceTree = "<group>"; };
 		43F63D8C4023189AF8505BFD /* Pods-DemoSpecList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoSpecList.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoSpecList/Pods-DemoSpecList.release.xcconfig"; sourceTree = "<group>"; };
 		707E17B0C4C02819E1AA2660 /* Pods_DemoSpecList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoSpecList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -66,11 +84,68 @@
 			isa = PBXGroup;
 			children = (
 				324807C120AC1D51009359E9 /* AppDelegate.swift */,
+				3289329320AC2D4400988CEC /* Constants.swift */,
+				32C9FE1F20AC223800EA426B /* Model */,
+				3289328E20AC260700988CEC /* Service */,
+				32C9FE1920AC21C200EA426B /* Screens */,
 				324807C820AC1D52009359E9 /* Assets.xcassets */,
 				324807CA20AC1D52009359E9 /* LaunchScreen.storyboard */,
 				324807CD20AC1D52009359E9 /* Info.plist */,
 			);
 			path = DemoSpecList;
+			sourceTree = "<group>";
+		};
+		3289328E20AC260700988CEC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3289328F20AC264900988CEC /* DocDocApiClient.swift */,
+				32BCA69420AC52CC00B64A49 /* ServiceResponse.swift */,
+				32BCA69620AC615F00B64A49 /* ServiceError+AFWrapping.swift */,
+				32BCA69A20ACF38800B64A49 /* Requests */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		32BCA69A20ACF38800B64A49 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				32BCA69220AC521900B64A49 /* GetSpecsRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		32C9FE1920AC21C200EA426B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				32C9FE1A20AC21D000EA426B /* SpecList */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		32C9FE1A20AC21D000EA426B /* SpecList */ = {
+			isa = PBXGroup;
+			children = (
+				32C9FE1B20AC220900EA426B /* SpecListViewController.swift */,
+				32C9FE1C20AC220900EA426B /* SpecListViewController.xib */,
+			);
+			path = SpecList;
+			sourceTree = "<group>";
+		};
+		32C9FE1F20AC223800EA426B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				32C9FE2020AC224D00EA426B /* Spec */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		32C9FE2020AC224D00EA426B /* Spec */ = {
+			isa = PBXGroup;
+			children = (
+				32C9FE2120AC227C00EA426B /* Spec.swift */,
+				32BCA69820AC6D9C00B64A49 /* Spec+Mapping.swift */,
+			);
+			path = Spec;
 			sourceTree = "<group>";
 		};
 		B51CD79EC69954F1C4BF7C11 /* Pods */ = {
@@ -144,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				324807CC20AC1D52009359E9 /* LaunchScreen.storyboard in Resources */,
+				32C9FE1E20AC220900EA426B /* SpecListViewController.xib in Resources */,
 				324807C920AC1D52009359E9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,10 +253,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DemoSpecList/Pods-DemoSpecList-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -194,7 +272,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32BCA69520AC52CC00B64A49 /* ServiceResponse.swift in Sources */,
 				324807C220AC1D51009359E9 /* AppDelegate.swift in Sources */,
+				32C9FE1D20AC220900EA426B /* SpecListViewController.swift in Sources */,
+				32BCA69320AC521900B64A49 /* GetSpecsRequest.swift in Sources */,
+				32BCA69720AC615F00B64A49 /* ServiceError+AFWrapping.swift in Sources */,
+				3289329020AC264900988CEC /* DocDocApiClient.swift in Sources */,
+				32C9FE2220AC227C00EA426B /* Spec.swift in Sources */,
+				3289329420AC2D4400988CEC /* Constants.swift in Sources */,
+				32BCA69920AC6D9C00B64A49 /* Spec+Mapping.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +346,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -311,7 +397,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

@@ -15,8 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        let docDocApiClient = DocDocApiClient()
+        
+        let vc = SpecListViewController()
+        vc.docDocApiClient = docDocApiClient
+        let navVc = UINavigationController(rootViewController: vc)
+        
         let window = UIWindow(frame: UIScreen.main.bounds)
-        window.rootViewController = UIViewController()
+        window.rootViewController = navVc
         window.makeKeyAndVisible()
         self.window = window
         
