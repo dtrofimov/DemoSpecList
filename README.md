@@ -46,12 +46,12 @@ DemoSpecList — небольшое iOS-приложение, решение т�
 
 С учётом данной информации, экран может принимать следующие состояния.
 
-![screenshot 1](screnshots/screenshot 1.png)
-![screenshot 2](screnshots/screenshot 2.png)
-![screenshot 3](screnshots/screenshot 3.png)
-![screenshot 4](screnshots/screenshot 4.png)
-![screenshot 5](screnshots/screenshot 5.png)
-![screenshot 6](screnshots/screenshot 6.png)
-![screenshot 7](screnshots/screenshot 7.png)
-![screenshot 8](screnshots/screenshot 8.png)
-![screenshot 9](screnshots/screenshot 9.png)
+![screenshot 1](/screenshots/screenshot1.png)
+![screenshot 2](/screenshots/screenshot2.png)
+![screenshot 3](/screenshots/screenshot3.png)
+![screenshot 4](/screenshots/screenshot4.png)
+![screenshot 5](/screenshots/screenshot5.png)
+![screenshot 6](/screenshots/screenshot6.png)
+![screenshot 7](/screenshots/screenshot7.png)
+![screenshot 8](/screenshots/screenshot8.png)
+![screenshot 9](/screenshots/screenshot9.png)
