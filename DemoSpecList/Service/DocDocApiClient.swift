@@ -25,10 +25,6 @@ class DocDocApiClient {
         
         var request = URLRequest(url: urlComponents.url!)
         request.cachePolicy = useCache ? .returnCacheDataElseLoad : .reloadIgnoringLocalCacheData
-        return self.sessionManager.request(request).responseJSON(completionHandler: { (response) in
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(2), execute: {
-                completionHandler(response)
-            })
-        })
+        return self.sessionManager.request(request).responseJSON(completionHandler: completionHandler)
     }
 }
